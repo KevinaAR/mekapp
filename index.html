@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mek'app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Page d'accueil -->
+  <div id="home-screen">
+    <img id="logo" src="images/logo.png" alt="Mek'app Logo">
+    <h1>Bienvenue sur Mek'app</h1>
+  </div>
+
+  <!-- Barre de navigation à trois barres -->
+  <nav id="menu">
+    <div id="menu-bar" onclick="toggleMenu()">☰</div>
+    <h1 class="menu-title">Mek'app</h1>
+    <ul id="menu-items">
+      <li onclick="showScreen('mekapp')">Mek'app</li>
+      <li onclick="showScreen('video')">Vidéo</li>
+      <li onclick="showScreen('garages')">Garages</li>
+      <li onclick="showScreen('options')">Options</li>
+      <li onclick="showScreen('about')">À propos</li>
+    </ul>
+  </nav>
+
+  <!-- Contenus dynamiques des écrans -->
+  <div id="content">
+    <!-- Écran 'Mek'app' (Base de données des pièces) -->
+    <div id="mekapp-screen" class="screen">
+      <h2>Base de données des pièces</h2>
+      <div id="piece-list" class="grid">
+        <!-- Pièces -->
+      </div>
+    </div>
+
+    <!-- Écran 'Vidéo' -->
+    <div id="video-screen" class="screen">
+      <h2>Vidéos</h2>
+      <div id="video-list" >
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/5ziTd4Mv0cM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Fonctionnement moteur</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/JMdPXTXIPWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Transmission manuelle</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/rNqkvLZwHWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Transmission automatique</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/7vXz6QPvt6A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Difference entre un moteur Diesel et Essence</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/ghsXaJtc8zg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Les types de voitures (Video en Anglais)</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/--Y4S9hA1bI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Comment entretenir son moteur</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/1lpkF3Sx9qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Base de la mécanique automobile</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/vRZu3-64yo0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Système de refroidissement du moteur</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/2JiOKCFp2HQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Les suspensions</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/JFir9mfDn94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Difference entre freins à disque et tambour</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/o5Vyz7rip_g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Fonctionnement du Turbo</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/34dbf5Es4jA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Les bases du circuit électrique d'une voiture</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/6zkuNZVpNso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Le rôle des capteurs dans une voiture moderne (ABS, Lambda, etc.)</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/s2B1A_6kwaI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Injection de carburant : comment ça marche ?</p>
+        </div>
+        <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/5umOURQuoGs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Pourquoi les pneus sont essentiels à la performance et à la sécurité ?</p>
+        </div>
+         <div class="video-item">
+          <iframe width="370" height="215" src="https://www.youtube.com/embed/ei6XYDyMEtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Comprendre les systèmes de direction assistée</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Écran 'Garages' -->
+   <div id="garages-screen" class="screen">
+  <h2></h2>
+  <div id="garage-list">
+    <!-- Les garages seront insérés ici par JavaScript -->
+  </div>
+</div>
+
+    <!-- Écran 'Options' -->
+    <div id="options-screen" class="screen">
+      <h2>Options</h2>
+      <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Mode Sombre</button>
+      <button id="lang-toggle" onclick="toggleLanguage()">🌍 Changer de langue</button>
+    </div>
+
+    <!-- Écran 'À propos' -->
+    <div id="about-screen" class="screen">
+      <h2 style="color: green;">À propos</h2>
+      <div class="about-text-container">
+      <div class="about-container">
+        <img src="images/poly.png" alt="Ton image">
+        <img src="images/espa.png" alt="Image Université">
+        <p>Mek'app V1.0.0 fait par ANDRIANTSEHENO Rojo Kevin
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
