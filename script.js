@@ -1109,7 +1109,7 @@ const translations = {
     darkMode: '🌙 Fomba maizina',
     langToggle: '🌍 Hanova fiteny',
     aboutTitle: 'Momba ny tena',
-    aboutText: 'Ity no toerana hanazavanao ny lalan\'ny fiainanao.'
+    aboutText: 'Mek\'app nataon\'i ANDRIANTSEHENO Rojo Kevin'
   }
 };
 
